@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Entretenimiento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/png" href="imagenes/LOGO.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imagenes/LOGO.png" alt="Logo Turismo La Perla" class="d-inline-block align-top me-2">
+                <span class="title">Turismo en La Perla</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home" style="color: rgb(29, 29, 85);"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hoteleria.html">Hotelería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gastronomia.html">Gastronomía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entretenimiento.html">Entretenimiento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Entretenimiento</h1>
+        <h2 class="text-left mb-4 text-white">Top Actividades Destacadas en San Pedro</h2>
+        <div class="table-responsive">
+            <table class="table table-dark table-hover">
+                <thead class="thead-light">
+                    <tr>
+                        <th>#</th>
+                        <th>Lugar</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="#jaque" onclick="highlightCard('jaque')">Camping y Balneario Municipal</a></td>
+                        <td>Un lugar perfecto para actividades al aire libre con áreas para acampar, parrillas y una piscina para disfrutar del día.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="#casacultura" onclick="highlightCard('casacultura')">Casa de la Cultura</a></td>
+                        <td>Ofrece una rica agenda de eventos culturales, incluyendo exposiciones de arte, conciertos y presentaciones teatrales.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="#museo" onclick="highlightCard('museo')">Museo Municipal</a></td>
+                        <td>Un espacio que preserva la historia y cultura local, con exhibiciones permanentes y temporales.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="#trekking" onclick="highlightCard('trekking')">Trekking del Ramal</a></td>
+                        <td>Rutas escénicas para los amantes del senderismo, ofreciendo vistas espectaculares de la región.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><a href="#enduro" onclick="highlightCard('enduro')">Enduro</a></td>
+                        <td>Ideal para los entusiastas de las motos todoterreno, con pistas desafiantes para la práctica del enduro.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><a href="#maraton" onclick="highlightCard('maraton')">Maratón San Pedro Corre</a></td>
+                        <td>Un evento deportivo que reúne a corredores para competir en diferentes categorías.</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><a href="#mountain" onclick="highlightCard('mountain')">Mountain Bike</a></td>
+                        <td>Senderos y rutas para practicar ciclismo de montaña, adaptados a diferentes niveles de dificultad.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><a href="#automovilismo" onclick="highlightCard('automovilismo')">Automovilismo</a></td>
+                        <td>Eventos y competencias de automovilismo, ofreciendo adrenalina y emoción para los amantes de los autos.</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td><a href="#boliche" onclick="highlightCard('boliche')">Boliche Nocturno</a></td>
+                        <td>El lugar ideal para disfrutar de la vida nocturna con amigos, con música, baile y diversión asegurada.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="text-left mb-4 mt-5 text-white">Actividades Destacadas</h2>
+        <div class="row">
+            <div class="col-md-4 d-flex">
+                <div id="jaque" class="entertainment-card">
+                    <div class="img-container">
+                        <img src="imagenes/jaque.jpg" alt="Jaque">
+                    </div>
+                    <div class="card-content">
+                        <h3>Camping y Balneario Municipal "JAQUE"</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div id="casacultura" class="entertainment-card">
+                    <div class="img-container">
+                        <img src="imagenes/casacultura.jpg" alt="Casa de la Cultural">
+                    </div>
+                    <div class="card-content">
+                        <h3>Casa de la Cultura</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div id="museo" class="entertainment-card">
+                    <div class="img-container">
+                        <img src="imagenes/museo.jpg" alt="Museo Municipal">
+                    </div>
+                    <div class="card-content">
+                        <h3>Museo Municipal</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 d-flex">
+                <div id="trekking" class="entertainment-card">
+                    <div class="img-container">
+                        <img src="imagenes/trekking.png" alt="Trekking el Ramal">
+                    </div>
+                    <div class="card-content">
+                        <h3>Trekking el Ramal</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div id="enduro" class="entertainment-card">
+                    <div class="img-container">
+                        <img src="imagenes/enduro.png" alt="Enduro">
+                    </div>
+                    <div class="card-content">
+                        <h3>Enduro</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div id="maraton" class="entertainment-card">
+                    <div class="img-container">
+                        <img src="imagenes/spcorre.png" alt="Maratón San Pedro Corre">
+                    </div>
+                    <div class="card-content">
+                        <h3>Maratón San Pedro Corre</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 d-flex">
+                <div id="mountain" class="entertainment-card">
+                    <div class="img-container">
+                        <img src="imagenes\mountain.png" alt="Mountain Bike">
+                    </div>
+                    <div class="card-content">
+                        <h3>Mountain Bike</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div id="automovilismo" class="entertainment-card">
+                    <div class="img-container">
+                        <img src="imagenes/automovilismo.png" alt="Automovilismo">
+                    </div>
+                    <div class="card-content">
+                        <h3>Automovilismo</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div id="boliche" class="entertainment-card">
+                    <div class="img-container">
+                        <img src="imagenes\farola.jpg" alt="Boliche Nocturno">
+                    </div>
+                    <div class="card-content">
+                        <h3>Boliche Nocturno "La Farola Night Dance"</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <div class="container-fluid">
+            <p>&copy; 2024 Turismo en La Perla | Todos los derechos reservados</p>
+            <p>Descubre la esencia única de San Pedro de Jujuy, donde la historia, la cultura y la naturaleza se encuentran en armonía.</p>
+        </div>
+    </footer>
+</body>
+</html>

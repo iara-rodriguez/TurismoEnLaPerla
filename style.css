@@ -1,0 +1,248 @@
+/* Estilos para la barra de navegación */
+.navbar-brand {
+    font-family: 'Playfair Display', serif; /* Fuente para el texto del logo */
+    font-size: 2rem; /* Tamaño del texto del logo */
+    font-weight: 700; /* Grosor del texto del logo */
+    color: #26336bef; /* Color del texto del logo */
+}
+.navbar-nav {
+    margin-left: auto; /* Mueve los elementos del navbar al extremo derecho */
+}
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Ajusta el margen derecho entre los elementos */
+}
+.navbar-nav .nav-link {
+    font-family: 'Roboto', sans-serif; /* Fuente para los enlaces del navbar */
+    font-weight: 540; /* Peso de la fuente */
+    color: #000000; /* Color del texto de los enlaces */
+    padding: 0.5rem 1rem; /* Espaciado interno de los enlaces */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff0707; /* Color del texto de los enlaces al pasar el mouse */
+}
+
+/* Estilo para el carousel */
+.carousel-item img {
+    width: 100%;
+    height: 600px; /* Altura fija para las imágenes del carousel */
+    object-fit: cover; /* Ajusta la imagen al contenedor cubriéndolo */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para la leyenda */
+    padding: 20px; /* Espaciado interno de la leyenda */
+    border-radius: 5px; /* Borde redondeado */
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 20px; /* Distancia desde abajo */
+    left: 50%; /* Centrado horizontal */
+    transform: translateX(-50%); /* Ajuste para centrado horizontal */
+}
+
+.carousel-caption h5 {
+    font-family: 'Montserrat', sans-serif; /* Fuente para el título */
+    font-size: 2.4rem; /* Tamaño del título */
+    font-weight: 700; /* Grosor del título */
+    color: #fff; /* Color del texto del título */
+    margin-bottom: 0.5rem; /* Espacio inferior */
+}
+
+.carousel-caption p {
+    font-family: 'Roboto', sans-serif; /* Fuente para el párrafo */
+    font-size: 1.2rem; /* Tamaño del texto del párrafo */
+    font-weight: 400; /* Peso del texto del párrafo */
+    color: #ddd; /* Color del texto del párrafo */
+    margin-bottom: 0; /* Elimina el margen inferior del párrafo */
+}
+body {
+    background: linear-gradient(to left, hsl(27, 54%, 48%), #50444b); /* Fondo degradado */
+    animation: gradientAnimation 3s ease infinite alternate; /* Aplica la animación */
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; /* Posición inicial del degradado */
+    }
+    100% {
+        background-position: 0% 100%; /* Posición final del degradado */
+    }
+}
+/* Estilos adicionales para el logo y el título */
+.navbar-brand img {
+    max-height: 60px; /* Ajusta el tamaño máximo del logo */
+}
+
+.navbar-brand .title {
+    font-size: 2rem; /* Tamaño del título en la barra de navegación */
+    margin-left: 10px; /* Espaciado a la izquierda del título */
+}
+
+@media (max-width: 576px) {
+    /* Ajustes para dispositivos móviles pequeños */
+    .navbar-brand img {
+        max-height: 30px; /* Reducir tamaño máximo del logo para pantallas pequeñas */
+    }
+
+    .navbar-brand .title {
+        font-size: 1.5rem; /* Reducir tamaño del título para pantallas pequeñas */
+    }
+}
+h1 {
+    font-family: 'Playfair Display', serif; /* Fuente para el texto del logo */
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #fff;
+}
+.content {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.content img {
+    max-width: 85%;
+    height: auto;
+    margin-top: 20px; 
+}
+.content p {
+    margin-left: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+.custom-iframe {
+    width: 100%;
+    height: 400px; 
+}
+/* Estilos para la sección de hotelería */
+.img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px; /* Añade bordes redondeados si deseas */
+    margin-bottom: 15px; /* Espacio inferior entre la imagen y el contenido de la tarjeta */
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen cubra todo el contenedor */
+}
+
+.hotel-card {
+    background-color: #131727ef; /* Fondo para la tarjeta */
+    border: 1px solid #ddd;
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para la tarjeta */
+    margin-bottom: 20px; /* Espaciado inferior entre tarjetas */
+}
+
+.hotel-card h3 {
+    font-family: 'Playfair Display', serif; /* Fuente para el título del hotel */
+    font-size: 1.5rem; /* Tamaño del título */
+    color: #ffffff; /* Color del texto del título */
+    margin-bottom: 10px; /* Espacio inferior del título */
+}
+
+.hotel-card p {
+    font-family: 'Roboto', sans-serif; /* Fuente para la descripción del hotel */
+    font-size: 1rem; /* Tamaño del texto de la descripción */
+    color: #c2c2c2; /* Color del texto de la descripción */
+}
+/* Estilo para las tarjetas */
+.restaurant-card, .entertainment-card {
+    background-color: #131727ef;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.restaurant-card .img-container, .entertainment-card .img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.restaurant-card .img-container img, .entertainment-card .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.restaurant-card h3, .entertainment-card h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.restaurant-card p, .entertainment-card p {
+    color: #ffeeee;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.restaurant-card .card-content, .entertainment-card .card-content {
+    flex-grow: 1;
+}
+
+/* Asegurando alineación vertical */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form-section {
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #131727ef;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th,
+.table td {
+    border: 1px solid #dee2e6;
+}
+
+.table th:first-child,
+.table td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.table th:last-child,
+.table td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.table a {
+    color: white;
+    text-decoration: none;
+}
+.table a:hover {
+    color: #db3b13;
+    text-decoration: none;
+}
+
